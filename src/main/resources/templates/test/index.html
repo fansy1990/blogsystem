@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <script src="../../public/js/jquery-3.1.0.min.js" th:src="@{/js/jquery-3.1.0.min.js}"></script>
+    <script src="../../public/js/test.js" th:src="@{/js/test.js}"></script>
+    <meta charset="UTF-8" />
+    <title>test/index</title>
+</head>
+<body>
+    This is index.html
+
+    <div>
+        <form action="test1.html" method="post" th:action="@{/test/test1}">
+            <fieldset>
+                <input type="text" name="first" />
+                <input type="text" name="second" />
+                <input type="text" name="third" />
+                <input type="submit" value="Submit1!" />
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <form action="test2.html" method="post" th:action="@{/test/test2}">
+            <fieldset>
+                <input type="text" name="first" />
+                <input type="text" name="second" />
+                <input type="text" name="third" />
+                <input type="submit" value="Submit2!" />
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+            <fieldset>
+                <input type="text" name="first" id="firstId" />
+                <input type="text" name="second" id="secondId"/>
+                <input type="text" name="third" id="thirdId" />
+                <input type="button" value="Submit3!" onclick="test1()"  />
+                <input type="button" value="Submit4!" onclick="test2()"  />
+                <input type="button" value="Submit5!" onclick="test3()"  />
+            </fieldset>
+    </div>
+
+
+</body>
+</html>
